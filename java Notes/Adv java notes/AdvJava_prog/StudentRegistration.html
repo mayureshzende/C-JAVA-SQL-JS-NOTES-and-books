@@ -1,0 +1,103 @@
+<HTML>
+ <head>
+  <style type="text/css">
+  	td {
+  		font-size: 2rem;
+  	}
+  	.outer {
+		border: 1px solid;
+		border-radius: 10px;
+		width: 50%;
+		height: 50%;
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+  	}
+  	.header {
+  		text-align: center;
+  	}
+  	.padding-left-50 {
+  		padding-left: 50px;
+  	}
+  	input {
+	  border: 0;
+	  outline: 0;
+	  background: transparent;
+	  border-bottom: 1px solid black;
+	  font-size: 1.5rem;
+	  color:blue;
+	}
+	.content {
+		overflow-x:auto;
+		overflow-y:auto;
+	}
+	select { 
+		width: 15rem;
+		height: 2rem;
+	}
+	.submitBtn {
+    align-items: center;
+    align-content: center;
+		height: 2rem;
+		width: 10rem;
+		font-size: 1.2rem;
+		background-color: powderblue;
+		border: 1px solid;
+		margin-top: 20px;
+		border-radius: 10px;
+		margin-bottom: 50px;
+	}
+ </style>
+ </head>
+ <body>
+  <div class='outer'>
+  	<div class='header'>
+  		<h2>Student Registration</h2>
+  	</div>
+  	<div class='content'>
+  		<form action="register.jsp">
+  		 <table>
+  		  <tr>
+  		  	<td class='padding-left-50'>Name <span style='color:red'>*</span></td>
+  		  	<td class='padding-left-50'>
+  		  		<input type='text' name='sname' maxlength="256" autofocus required/></td>
+  		  </tr>
+  		  <tr>
+  		  	<td class='padding-left-50'>Email</td>
+  		  	<td class='padding-left-50'><input type='email' name='email' maxlength="256" /></td>
+  		  </tr>
+  		  <tr>
+  		  	<td class='padding-left-50'>Phone Number</td>
+  		  	<td class='padding-left-50'><input type='phone' name='phone' maxlength="256" /></td>
+  		  </tr>
+  		  <tr>
+  		  	<td class='padding-left-50'>Department</td>
+  		  	<td class='padding-left-50'>
+  		  	 <select>
+  		  	  <option value="1">Computer science</option>
+		  	  <option value="1">IT</option> 
+  		  	  <option value="1">E & TC</option> 
+  		  	  <option value="1">Electronics</option> 
+ 
+  		  	 </select>
+  		  	</td>
+  		  </tr>
+	  		  <tr>
+	  		  	<td colspan="2" align="center">
+	  		  		<button class='submitBtn' type='submit'> Register </button></td>
+	  		  </tr>
+  		 </table>
+  		</form>
+  	</div>
+  	<div class='footer'>
+  	</div>
+  </div>
+ </body>
+</HTML>
+
+
+
+

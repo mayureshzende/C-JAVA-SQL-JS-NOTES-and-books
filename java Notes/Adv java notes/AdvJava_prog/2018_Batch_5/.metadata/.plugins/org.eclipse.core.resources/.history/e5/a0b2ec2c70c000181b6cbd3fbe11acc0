@@ -1,0 +1,6 @@
+<%
+	Cookie[] arr = request.getCookies();
+	for(Cookie c : arr) {
+		
+	}
+%>

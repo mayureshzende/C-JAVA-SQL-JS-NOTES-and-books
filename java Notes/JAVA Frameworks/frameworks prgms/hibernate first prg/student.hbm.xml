@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.pga.Student" table="student">
+        <id name="sRollNo" column="rollNo"></id>
+        <property name="sName" column="name"/>
+        <property name="sMarks" column="marks" />
+    </class>
+</hibernate-mapping>

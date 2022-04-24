@@ -1,0 +1,46 @@
+<HTML>
+ <head>
+ 	 <style type="text/css">
+ 	 	button { margin:10px; }
+ 	 </style>
+	 <script type="text/javascript">
+	  function addData() {
+	   var data = document.getElementById('data').value;
+	   var btn = document.createElement('button');
+	   btn.innerHTML = data;
+	   var body = document.getElementsByTagName('body')[0];
+	   body.appendChild(btn);
+	  }
+	  function search() {
+	   var data = document.getElementById('data').value;
+	   var arr = document.getElementsByTagName('button');
+	   for(var i=3 ; i < arr.length; i++) {
+	   	if(arr[i].innerHTML == data) {
+	   		arr[i].style.backgroundColor = 'yellow';
+	   	}else {
+	   		arr[i].style.backgroundColor = 'white';
+	   	}
+	   }
+	  }
+	  function deleteBtn() {
+	   var body = document.getElementsByTagName('body')[0];
+	   var data = document.getElementById('data').value;
+	   var arr = document.getElementsByTagName('button');
+	   for(var i=3 ; i < arr.length; i++) {
+	   	if(arr[i].innerHTML == data) {
+	   		body.removeChild(arr[i]);
+	   		i--;
+	   	}
+	   }
+
+	  }
+	 </script>
+ </head>
+ <body>
+  <h2> Enter something </h2>
+  <input type='text' id='data'/>
+  <button onclick="addData()">Add</button>
+  <button onclick="deleteBtn()">Delete</button>
+  <button onclick="search()">Heighlight</button><BR>
+ </body>
+</HTML>

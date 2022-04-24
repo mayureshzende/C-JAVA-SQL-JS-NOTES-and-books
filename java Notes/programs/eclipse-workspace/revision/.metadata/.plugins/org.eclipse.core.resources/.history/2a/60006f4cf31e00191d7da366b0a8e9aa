@@ -1,0 +1,17 @@
+package practice;
+
+import java.io.*;
+public class basic {
+	public static void main(String[] args) {
+		int a,b;
+		a=10;
+		b=30;
+
+int res=add(a,b);
+System.out.println("result"+res);
+	}
+
+	static int add(int a,int b) {
+		return a+b;
+	}
+}

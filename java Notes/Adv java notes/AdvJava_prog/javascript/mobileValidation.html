@@ -1,0 +1,21 @@
+<HTML>
+ <head>
+  <script type="text/javascript">
+  	function validateMobile() {
+  	 var regEx = /^\d{3}\s?\d{3}\s?\d{4}$/;
+  	 var data = document.getElementById('ph').value;
+  	 var isValid = regEx.test(data);
+  	 var span = document.getElementById('result');
+  	 span.innerHTML = isValid ? 'Valid number' : 'Invalid number';
+  	 span.style.color = isValid ? 'green' : 'red';
+  	}
+  </script>
+ </head>
+ <body>
+  Enter your mobile number:
+  <input type='text' id='ph' oninput="validateMobile()"/>
+  <span id='result'></span>
+ </body>
+</HTML>
+
+

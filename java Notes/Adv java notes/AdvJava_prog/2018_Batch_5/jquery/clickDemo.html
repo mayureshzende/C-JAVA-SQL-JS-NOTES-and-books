@@ -1,0 +1,34 @@
+<head>
+  <style>
+  p {
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+  }
+  p:hover {
+    background: yellow;
+  }
+  </style>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+ 
+<p>First Paragraph</p>
+<p id='p2'>Second Paragraph</p>
+<p>Yet one more Paragraph</p>
+ 
+<script>
+$( "#p2" ).click(function() {
+  $( this ).slideUp();
+});
+</script>
+ 
+</body>
+</html>
+
+
+
+
+
+
+

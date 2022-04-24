@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:basic,org.eclipse.launchbar.core.descriptorType.default\:Test,org.eclipse.launchbar.core.descriptorType.default\:TestClass,org.eclipse.launchbar.core.descriptorType.default\:TestClass1,org.eclipse.launchbar.core.descriptorType.default\:basic (1),org.eclipse.launchbar.core.descriptorType.default\:GetSetter,org.eclipse.launchbar.core.descriptorType.default\:BitsConversison,org.eclipse.launchbar.core.descriptorType.default\:ConstructorExample,org.eclipse.launchbar.core.descriptorType.default\:ConstrutorObj,org.eclipse.launchbar.core.descriptorType.default\:ArraysExample,org.eclipse.launchbar.core.descriptorType.default\:ArraySqNew,org.eclipse.launchbar.core.descriptorType.default\:RevOrgArr,org.eclipse.launchbar.core.descriptorType.default\:ArraySum,org.eclipse.launchbar.core.descriptorType.default\:StringFun,org.eclipse.launchbar.core.descriptorType.default\:Print_WithoutLoop,org.eclipse.launchbar.core.descriptorType.default\:Factorial,org.eclipse.launchbar.core.descriptorType.default\:ZeroAndOne,org.eclipse.launchbar.core.descriptorType.default\:RemoveDup
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:ArraySum/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ArraysExample/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ArraysExample/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Factorial/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Print_WithoutLoop/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:RemoveDup/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:RevOrgArr/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:basic\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:basic\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:basic/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:basic/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

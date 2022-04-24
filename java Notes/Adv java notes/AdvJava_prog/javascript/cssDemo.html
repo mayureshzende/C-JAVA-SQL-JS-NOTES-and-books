@@ -1,0 +1,41 @@
+<HTML>
+ <head>
+  <style type="text/css">
+  	div {
+  		height: 100;
+  		width: 100;
+  		background-color: green;
+  	}
+  </style>
+  	<script type="text/javascript" src="1.js"></script>
+	 <script type="text/javascript">
+	 	function applyCss() {
+	      var w = getValue('w');
+	      var h = getValue('h');
+	      var c = getValue('color');
+	      var box = document.getElementById('box');
+	      box.style.width = w;
+	      box.style.height = h;
+	      box.style.backgroundColor = c;
+
+	 	}
+	 </script>
+  </head>
+
+ <body>
+ 	Width <input type='number' id='w'
+ 		oninput="applyCss()"/>
+ 	Height <input type='number' id='h'
+ 		oninput="applyCss()"/>
+ 	Color <input type='color' id='color'
+ 		oninput="applyCss()"/>
+ 	<div id='box'></div>
+ 	<button onclick="applyCss()"> Apply </button>
+ </body>
+</HTML>
+
+
+
+
+
+

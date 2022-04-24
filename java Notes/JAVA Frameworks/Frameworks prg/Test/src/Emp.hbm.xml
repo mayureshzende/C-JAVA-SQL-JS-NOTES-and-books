@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Oct 6, 2018 9:19:37 AM by Hibernate Tools 5.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="pga" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.pga.Emp" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="emp">
+        <id name="eid" type="int">
+            <column name="eid"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="name"/>
+        </property>
+        <property generated="never" lazy="false" name="salary" optimistic-lock="true" type="java.lang.Float" unique="false">
+            <column name="salary" precision="12" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

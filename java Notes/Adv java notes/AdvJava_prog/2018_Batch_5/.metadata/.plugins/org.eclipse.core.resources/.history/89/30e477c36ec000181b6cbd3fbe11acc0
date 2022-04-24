@@ -1,0 +1,5 @@
+<%
+  String name = request.getParameter("userName");
+  String rev = new StringBuffer(name).reverse().toString();
+  
+%>

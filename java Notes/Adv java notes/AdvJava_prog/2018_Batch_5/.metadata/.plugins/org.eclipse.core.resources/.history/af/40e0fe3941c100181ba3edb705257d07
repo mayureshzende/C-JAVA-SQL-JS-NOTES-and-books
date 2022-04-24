@@ -1,0 +1,14 @@
+package com.pga;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.*;
+
+public class MultiplicationTableServlet extends HttpServlet {
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		int n = Integer.parseInt(request.getParameter("num"));
+		
+	}
+
+}

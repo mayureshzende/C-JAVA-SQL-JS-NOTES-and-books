@@ -1,0 +1,40 @@
+<HTML>
+ <head>
+  <style type="text/css">
+  	button { margin:5px; }
+  </style>
+  <script type="text/javascript"
+  		  src='jquery-3.3.1.js'></script>
+  <script type="text/javascript">
+  	$().ready(function(){
+  		$('#add').click(function(){
+  		 $('body').append(
+  		 	'<button>' + $('#data').val() + '</button>'
+  		 );
+  		});
+
+  		$('#search').click(function() {
+  		 $('button').css('background-color','white');
+  		 var data = $('#data').val();
+  		 var arr = $('button').toArray();
+  		 const result = arr.filter(btn => btn.innerHTML == data);
+  		 result.map(btn => $(btn).css('background-color','yellow'));
+  		});
+
+  		$('#delete').click(function() {
+  		 var data = $('#data').val();
+  		 var arr = $('button').toArray();
+  		 const result = arr.filter(btn => btn.innerHTML == data);
+  		 result.map(btn => $(btn).remove());
+  		});
+  	});
+  </script>
+ </head>
+ <body>
+ 	Enter something
+ 	<input type='text' id='data'/>
+ 	<button id='add'>Add</button>
+	<button id='search'>Heighlight</button>
+ 	<button id='delete'>Delete</button>
+ </body>
+</HTML>

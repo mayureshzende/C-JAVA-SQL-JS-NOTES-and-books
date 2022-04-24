@@ -1,0 +1,28 @@
+/*<html>
+<head>
+<style>
+.bgColorRed{
+	background-color: red;font-style: italic;
+}
+</style>
+</head>
+<body class="bgColorRed">
+</body>
+
+</html>*/
+body {
+    background-color: grey;
+}
+h1{
+	color: red;
+}
+p{
+	font-size: 30px;font-style: italic;color: orange;
+}
+table,th,td{
+	border:1px solid black;color: orange;  text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    width:100px;
+
+}

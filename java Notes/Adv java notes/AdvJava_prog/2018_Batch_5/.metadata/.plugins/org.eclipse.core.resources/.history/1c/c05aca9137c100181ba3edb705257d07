@@ -1,0 +1,11 @@
+<table>
+ <tr> <th>City</th></tr>
+ <tr> <th>Cinema Hall</th></tr>
+ <tr> <th>Movie</th></tr>
+ <tr> <th>Date</th></tr>
+ <tr>
+ 	<th>No. Of Seats</th>
+ 	<td> ${param.noOfSeats} </td>
+ </tr>
+ 
+</table>

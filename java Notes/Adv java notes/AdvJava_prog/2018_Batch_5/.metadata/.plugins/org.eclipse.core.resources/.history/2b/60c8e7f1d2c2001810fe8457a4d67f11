@@ -1,0 +1,19 @@
+package com.pga;
+
+import java.io.*;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebListener;
+
+@WebListener
+public class AppStartStopListener implements ServletContextListener {
+    public void contextDestroyed(ServletContextEvent arg0)  { 
+    	  FileWriter w = new FileWriter(new File("/tmp/count.txt"));
+    	  
+    }
+
+    public void contextInitialized(ServletContextEvent arg0)  { 
+    	
+    }
+	
+}

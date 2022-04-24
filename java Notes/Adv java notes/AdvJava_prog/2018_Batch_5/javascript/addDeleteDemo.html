@@ -1,0 +1,44 @@
+<HTML>
+ <head>
+ 	<style type="text/css">
+ 		button { margin : 10px; }
+ 	</style>
+ 	<script type="text/javascript">
+
+ 	 function addBtn(n) {
+ 	  var btnTag = document.createElement('button');
+ 	  btnTag.innerHTML = n;
+ 	  var bodyTag = document.getElementsByTagName('body')[0];
+ 	  bodyTag.appendChild(btnTag);
+ 	 }
+ 	 function search(n) {
+ 	  var btns = document.getElementsByTagName('button');
+ 	  for(var i=0 ; i <btns.length; i++) {
+ 	  	if(btns[i].innerText == n) {
+ 	  	 btns[i].style.backgroundColor = 'yellow';
+ 	  	}else {
+ 	  		btns[i].style.backgroundColor = 'white';
+ 	  	}
+ 	  }
+ 	 }
+ 	 function deleteBtn(n) {
+ 	  var bodyTag = document.getElementsByTagName('body')[0];
+ 	  var btns = document.getElementsByTagName('button');
+ 	  for(var i=0 ; i <btns.length; i++) {
+ 	  	if(btns[i].innerText == n) {
+ 	  		bodyTag.removeChild(btns[i]);
+ 	  		i--;
+ 	  	}
+ 	  }
+ 	 }
+
+ 	</script>
+ </head>
+ <body>
+  Enter number between 1-10 
+  <input type='text' id='num'/>
+  <button onclick="addBtn(num.value)"> Add </button>
+  <button onclick="search(num.value)"> Search </button>
+  <button onclick="deleteBtn(num.value)"> Delete </button> <BR>
+ </body>
+</HTML>

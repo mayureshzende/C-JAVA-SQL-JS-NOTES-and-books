@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:AES_Encryption,org.eclipse.launchbar.core.descriptorType.default\:Sample
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:AES_Encryption/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:AES_Encryption/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

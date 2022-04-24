@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="F:/BE/LP-I Final/DA/3_4/hadoop-core-1.2.1.jar" sourcepath="C:/Program Files/Java/jdk1.8.0_144/bin"/>
+	<classpathentry kind="lib" path="F:/programming software/hadoop-2.7.3.tar.gz"/>
+	<classpathentry kind="lib" path="F:/programming software/hadoop-2.8.0.tar.gz"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hadoopjar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

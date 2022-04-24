@@ -1,0 +1,17 @@
+ 		* {
+ 			color: white;
+ 			font-weight: bold;
+ 			font-size: 32px;	
+ 		}
+ 		div {
+ 			height: 100px;
+ 		}
+ 		#greenDiv {
+ 			background-color: orange;
+ 			border: 1px solid black;
+ 			margin-bottom: 50px;
+ 		}
+ 		.blueBg {
+ 			background-color: blue;
+ 			border: 5px solid black;
+ 		}

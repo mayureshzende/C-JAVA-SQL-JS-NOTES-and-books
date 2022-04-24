@@ -1,0 +1,94 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class AddScreen extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					AddScreen frame = new AddScreen();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public AddScreen() {
+		frame=new Jframe();
+		frame.setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 716, 445);
+		contentPane = new JPanel();
+		contentPane.setBackground(Color.GRAY);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnSubmit = new JButton("Submit");
+		btnSubmit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnSubmit.setBackground(Color.GREEN);
+		btnSubmit.setBounds(524, 154, 132, 61);
+		contentPane.add(btnSubmit);
+		
+		textField = new JTextField();
+		textField.setBounds(182, 50, 226, 30);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(182, 165, 226, 30);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(182, 278, 226, 30);
+		contentPane.add(textField_2);
+		textField_2.setColumns(10);
+		
+		JLabel lblAdd = new JLabel("Roll NO");
+		lblAdd.setForeground(new Color(255, 200, 0));
+		lblAdd.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
+		lblAdd.setBounds(67, 50, 114, 37);
+		contentPane.add(lblAdd);
+		
+		JLabel lblUpdate = new JLabel("Name");
+		lblUpdate.setForeground(new Color(255, 200, 0));
+		lblUpdate.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
+		lblUpdate.setBounds(67, 165, 114, 37);
+		contentPane.add(lblUpdate);
+		
+		JLabel lblMarks = new JLabel("Marks");
+		lblMarks.setForeground(new Color(255, 200, 0));
+		lblMarks.setFont(new Font("Comic Sans MS", Font.PLAIN, 18));
+		lblMarks.setBounds(67, 271, 114, 42);
+		contentPane.add(lblMarks);
+	}
+}

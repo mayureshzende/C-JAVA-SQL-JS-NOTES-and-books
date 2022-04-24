@@ -1,0 +1,17 @@
+<HTML>
+ <head>
+ 	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+ 	<script type="text/javascript">
+ 		$.ajax({
+		  url: 'https://randomuser.me/api/',
+		  dataType: 'json',
+		  success: function(data) {
+		   	var email = data.results[0].email;
+		   	$('body').append('<h1> Email: ' + email +"</h1>");
+ 		}
+});
+ 	</script>
+ </head>
+ <body>
+ </body>
+</HTML>

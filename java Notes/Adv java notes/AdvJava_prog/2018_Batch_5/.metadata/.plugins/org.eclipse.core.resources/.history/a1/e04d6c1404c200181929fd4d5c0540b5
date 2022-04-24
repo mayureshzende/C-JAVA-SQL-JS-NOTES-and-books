@@ -1,0 +1,6 @@
+<HTML>
+  <a href="./get/students?op=DIST">  Distinction </a>
+  <a href="./get/students?op=PASS"> Pass Class </a>
+  <a href="./get/students?op=FAIL"> Failed </a>
+
+</HTML>

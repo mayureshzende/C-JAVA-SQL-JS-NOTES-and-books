@@ -1,0 +1,13 @@
+#Tomcat publish data
+#Mon Oct 01 09:04:38 IST 2018
+org.eclipse.jst.jee.server\:jstl=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/jstl
+org.eclipse.jst.jee.server\:context-config=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/context-config
+org.eclipse.jst.jee.server\:formDemo=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/formDemo
+org.eclipse.jst.jee.server\:visitCounter=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/visitCounter
+org.eclipse.jst.jee.server\:anno=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/anno
+org.eclipse.jst.jee.server\:bookmyshow=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/bookmyshow
+org.eclipse.jst.jee.server\:jdbc-jstl=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/jdbc-jstl
+org.eclipse.jst.jee.server\:jsp-actions=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/jsp-actions
+org.eclipse.jst.jee.server\:FilterDemo=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/FilterDemo
+org.eclipse.jst.jee.server\:servlet=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/servlet
+org.eclipse.jst.jee.server\:jsp-servlet=/Users/gajjarp/lect/AdvancedJava/2018_Batch_5/apache-tomcat-8.5.34/wtpwebapps/jsp-servlet

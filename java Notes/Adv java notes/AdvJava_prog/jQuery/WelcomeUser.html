@@ -1,0 +1,19 @@
+<HTML>
+ <head>
+  <script type="text/javascript"
+  		  src='jquery-3.3.1.js'></script>
+  <script type="text/javascript">
+  	$().ready(function(){
+  		$('button').click(function(){
+  			var name = $('#userName').val();
+  			alert("Welcome " + name);
+  		});
+  	});
+  </script>
+ </head>
+ <body>
+  Enter your name:
+  <input type='text' id='userName'/>
+  <button> Welcome </button>
+ </body>
+</HTML>

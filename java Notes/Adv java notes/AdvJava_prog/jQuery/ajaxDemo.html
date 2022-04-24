@@ -1,0 +1,42 @@
+<HTML>
+ <head>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+	function sendAjaxRequest() {
+    	var req = new XMLHttpRequest();
+    	req.onreadystatechange = function() {
+        if (req.readyState == XMLHttpRequest.DONE) {   
+           if (req.status == 200) {
+               console.log(req.responseText);
+           }
+        }
+    };
+    req.open("GET", "https://randomuser.me/api", true);
+    req.send();
+	}
+
+  	$().ready(function(){
+  		$('button').click(sendAjaxRequest);
+  	 // $('button').click(function(){
+  	 // 	$.ajax({
+  	 // 		url:'https://randomuser.me/api',
+  	 // 		dataType:'json',
+  	 // 			: function(data) {
+  	 // 		 var user = data.results[0];
+  	 // 		 console.log('name',user.name.first);
+  	 // 		 console.log('email',user.email);
+  	 // 		 console.log('phone',user.phone);
+  	 // 		 console.log('pic',user.picture.medium);
+  	 // 		}
+  	 // 	});
+  	 // });
+  	});
+  </script>
+ </head>
+ <body>
+ 	<button> Add User </button>
+ </body>
+</HTML>
+
+
+

@@ -1,0 +1,27 @@
+<HTML>
+ <head>
+  <script type="text/javascript">
+  	function sayWelcome() {
+  	  var name = document.getElementById('userName').value;
+  	  alert("Welcome " + name + "!!!");
+  	}
+  	function enableButton() {
+  var btnObj = document.getElementsByTagName('button')[0];
+   var name = document.getElementById('userName').value;
+  	  btnObj.disabled = name.length < 2;
+  	}
+  </script>
+ </head>
+ <body>
+ 	Enter your name:
+ 	<input type='text' id='userName'
+ 		   oninput="enableButton()"/>
+ 	<button onclick="sayWelcome()" disabled>
+ 		Click Me
+ 	</button>
+ </body>
+</HTML>
+
+
+
+

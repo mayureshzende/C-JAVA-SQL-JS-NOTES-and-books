@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+ <!--  Constructor based Dependency Injection -->
+ 	<bean id="add1" class="com.pga.Address">
+ 		<constructor-arg value="Pune"></constructor-arg>
+		<constructor-arg value="F.C.Road"></constructor-arg>
+		<constructor-arg value="41105"></constructor-arg>
+ 	</bean>
+	<bean id="stud1" class="com.pga.Student">
+	 	<constructor-arg name="id" value="11"/> 
+	 	<constructor-arg name="name" value="Fred"/>
+	 	<constructor-arg name="add" ref="add1"></constructor-arg>
+ 	</bean>
+ <!--  Setter based Dependency Injection -->
+	<bean id="stud2" class="com.pga.Student">
+	 	<property name="id" value="12"/>
+	 	<property name="name" value="PGA"/>
+	 	<property name="add" ref="add1"/>
+ 	</bean>
+</beans>

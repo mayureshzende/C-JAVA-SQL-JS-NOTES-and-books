@@ -1,0 +1,55 @@
+<HTML>
+ <head>
+  <style type="text/css">
+  	span { color: red; }
+  </style>
+  <script type="text/javascript">
+  	function verify() {
+  		var idValidation = isValidId();
+  		var nameValidation = isValidName();
+  		var salaryValidation = isValidSalary();
+  		return idValidation && nameValidation && salaryValidation;
+  	}
+
+  	function isValidId() {
+  	 var id = document.getElementById('empId').value;
+  	 var regEx = /^\d{1,5}$/;
+  	 var isValid = regEx.test(id);
+  	 var errTag = document.getElementById('idError');
+  	 errTag.innerHTML= isValid ? '': 'Invalid ID';
+  	 return isValid;
+  	} 
+  	function isValidName() {
+  	 var name = document.getElementById('empName').value;
+  	 var regEx = /^[A-Z][a-z]*$/;
+  	 var isValid = regEx.test(name);
+  	 var errTag = document.getElementById('nameError');
+  	 errTag.innerHTML= isValid ? '': 'Invalid Name';
+  	 return isValid;
+  	} 
+  	function isValidSalary() {
+  	 var salary = document.getElementById('salary').value;
+  	 var regEx = /^\d+\.?\d+$/;
+  	 var isValid = regEx.test(salary);
+  	 var errTag = document.getElementById('salError');
+  	 errTag.innerHTML= isValid ? '': 'Invalid Salary';
+  	 return isValid;
+  	} 
+  </script>
+ </head>
+ <body>
+ 	<form action="register.jsp" onsubmit="return verify()">
+	 Id * <input type='number' id='empId' required>
+	 <span id='idError'></span>
+	 <BR>
+	 Name *<input type='text' id='empName' required/>
+	 <span id='nameError'></span>
+	 <BR>
+	 Salary *<input type='text' id='salary' required/>
+	 <span id='salError'></span>
+	 <BR>
+	 Dept <input type='text' id='dept'/><BR>
+	 <input type='submit' value='Register'/>
+ 	</form>
+ </body>
+</HTML>

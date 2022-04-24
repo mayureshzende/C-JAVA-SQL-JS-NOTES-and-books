@@ -1,0 +1,29 @@
+<HTML>
+ <head>
+  <style type="text/css">
+  	div {
+  		background-color: green;
+  		height: 100px;
+  		width: 100px;
+  	}
+  </style>
+  <script type="text/javascript">
+  	function changeDimension(dim) {
+  	  var div = document.getElementById('myDiv');
+  	  var w = div.offsetWidth;
+  	  var h = div.offsetHeight;
+  	  w = w + dim;
+  	  h = h + dim;
+  	  div.style.width = w;
+  	  div.style.height = h;
+  	}
+  </script>
+ </head>
+ <body>
+ 	<button onclick="changeDimension(25)"> ++ </button>
+ 	<button onclick="changeDimension(-25)"> -- </button>
+ 	<div id='myDiv'></div>
+
+ </body>
+</HTML>
+

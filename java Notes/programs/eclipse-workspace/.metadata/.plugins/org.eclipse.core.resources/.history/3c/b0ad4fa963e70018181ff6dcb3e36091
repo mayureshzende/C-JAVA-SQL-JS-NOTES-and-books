@@ -1,0 +1,38 @@
+package arrays;
+
+public class arr {
+
+	 
+	 public static void main(String[] args) {
+		if(args.length<2) {
+			System.out.println("enter 2 args");
+			
+		}
+		
+		String a1=args[0];
+		String b1=args[1];
+		addi a=new addi();
+		System.out.println("addition is "+a);
+		
+	}
+	 
+}
+class addi
+{
+
+	private int a;
+	private int b;
+	addi(){}
+	
+	public void addi(int a,int b) {
+		this.a = a;
+		this.b = b;
+	}
+	
+//	public static int add(int a,int b) {
+//		return a+b;
+//	}
+	 public String toStrings() {
+		 return "a="+a+"b="+b+"\n";
+	 }
+}

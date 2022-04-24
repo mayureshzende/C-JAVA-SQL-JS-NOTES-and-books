@@ -1,0 +1,22 @@
+
+<!-- HOW to add HTML element dynamically using javascript -->
+<HTML>
+ <head>
+ 	<script type="text/javascript">
+ 	 function addElement() {
+ 	  var inputTag = document.getElementById('input');
+ 	  var text = inputTag.value;
+ 	  var h4Tag = document.createElement('h4');
+ 	  h4Tag.innerHTML = text;
+ 	  var bodyTag = document.getElementsByTagName('body')[0];
+ 	  bodyTag.appendChild(h4Tag);
+ 	  inputTag.value='';//resetting value
+ 	  inputTag.focus();//focusing on text box
+ 	 }
+ 	</script>
+ </head>
+ <body>
+ 	Enter text : <input type="text" id='input'>
+ 	<button onclick="addElement()"> Add </button>
+ </body>
+</HTML>

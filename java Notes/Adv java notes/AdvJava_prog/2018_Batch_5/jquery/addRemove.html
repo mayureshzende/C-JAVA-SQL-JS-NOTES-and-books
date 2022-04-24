@@ -1,0 +1,43 @@
+<HTML>
+ <head>
+  <style type="text/css">
+  	button {
+  		margin: 10px;
+  	}
+  </style>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+  	$().ready(function() {
+  		$('#add').click(function(){
+  			$('body').append
+  			('<button>' + $('#num').val() +'</button>');
+  		});
+  		$('#search').click(function(){
+  			var btns = $('button');
+  			for(var i=0; i<btns.length;i++) {
+  				if(btns[i].innerText == $('#num').val()) {
+  				 $(btns[i]).css('background-color','orange');
+  				}else {
+  				 $(btns[i]).css('background-color','white');
+  				}
+  			}
+  		});
+  		$('#remove').click(function(){
+  			var btns = $('button');
+  			for(var i=0; i<btns.length;i++) {
+  				if(btns[i].innerText == $('#num').val()) {
+  					$(btns[i]).remove();
+  				}
+  			}
+  		});
+  	});
+  </script>
+ </head>
+ <body>
+  Enter number: <input type='text' id='num'/>
+  <button id='add'>ADD</button>
+  <button id='search'>Search</button>
+  <button id='remove'>Remove</button><BR>
+
+ </body>
+</HTML>

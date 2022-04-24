@@ -1,0 +1,11 @@
+<HTML>
+ <form>
+  Select city 
+  <select name="city">
+  	<option value="pune">Pune </option>
+  	<option value="banglore">Banglore</option>
+  	<option value="hyd">Hyderabad</option>
+  	<option value="chennai">Chennai</option>
+  </select>
+ </form>
+</HTML>

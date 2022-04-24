@@ -1,0 +1,7 @@
+<HTML>
+ <form action="createCookie.jsp">
+  Enter your name:
+  <input type="text" name="userName"/>
+  <input type="button" value="Next"/>
+ </form>
+</HTML>

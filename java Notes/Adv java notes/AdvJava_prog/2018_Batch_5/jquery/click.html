@@ -1,0 +1,23 @@
+<HTML>
+ <head>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+
+  	$().ready(function() {
+  		$('#btn').click(function() {
+  			alert("button is clicked...");
+  			$('#btn2').click();
+  		});
+
+  		$('#btn2').click(function(){
+  			alert("How i got clicked ??");
+  		});
+  	});
+ 
+  </script>
+ </head>
+ <body>
+  <button id='btn'> Click Here </button>
+  <button id='btn2'> Don't click me </button>
+ </body>
+</HTML>
